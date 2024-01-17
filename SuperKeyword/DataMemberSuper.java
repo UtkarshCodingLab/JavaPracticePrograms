@@ -5,11 +5,11 @@ package SuperKeyword;
 
 // Base class vehicle
 class Vehicle {
-    int maxSpeed = 120;
+    private int maxSpeed = 120;
     void display()
     {
         // print maxSpeed of base class (vehicle)
-        System.out.println("Maximum Speed: "
+        System.out.println("Maximum Speed of Parent Vehicle: "
                 + maxSpeed);
     }
 
@@ -21,8 +21,9 @@ class Car extends Vehicle {
     void display()
     {
         // print maxSpeed of base class (vehicle)
-        System.out.println("Maximum Speed: "
+        System.out.println("Maximum Speed of Child Vehicle: "
                 + maxSpeed);
+        System.out.println(super.display());
     }
 }
 
